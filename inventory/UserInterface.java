@@ -512,7 +512,7 @@ public class UserInterface extends Application {
 			try {
 				success = rules.newItem(isIngredient, name, units, low, q, p);
 				if(!success) {
-					throwError("\n\nUnable to add the item to the database. Please check your inputs.");
+					throwError("\n\nUnable to add the item to the database. Please check your inputs. Numberic values must be positive numbers. The name must be unique - cannot add the same item twice.");
 				}
 				else {
 					root.setCenter(successPage);

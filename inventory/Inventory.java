@@ -26,17 +26,17 @@ public class Inventory{
 		new Thread() {
 			@Override
 			public void run() {
+				UserInterface.rules = business;
 				javafx.application.Application.launch(UserInterface.class);
 			}
 		}.start();
 	}
 	
 	//only for testing purposes
-	public static void main(String [] args){
+/*	public static void main(String [] args){
 		Inventory inv = new Inventory();
-		UserInterface.rules = inv.business;
 		inv.startUI();
 		
-	}
+	}*/
 
 }

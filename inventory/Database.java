@@ -107,14 +107,21 @@ public class Database{
 		}
 	}
 
-	protected void newItem(boolean isIngredient, String name, String unit, int low, int quantity, double price){
-
+	protected boolean newItem(boolean isIngredient, String name, String unit, int low, int quantity, double price){
 		Item thing = new Item(isIngredient, name, unit, low, quantity, price);
 		if(isIngredient){
-			ingredients.put(name, thing);
+			if(ingredients.get(name) == null) {
+				ingredients.put(name, thing);
+				return true;
+			}
+			return false;
 		}
 		else{
-			items.put(name, thing);
+			if(items.get(name) == null) {
+				items.put(name, thing);
+				return true;
+			}
+			return false;
 		}
 
 		//incomplete implementation - [demo version]

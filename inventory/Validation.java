@@ -148,10 +148,8 @@ public final class Validation{
 		if(name == null || unit == null || low < 0 || q < 0 || p < 0){
 			return false;
 		}
-
-		db.newItem(isIngredient, name.toLowerCase(), unit.toLowerCase(), low, q, p);
-
-		return true;
+		
+		return db.newItem(isIngredient, name.toLowerCase(), unit.toLowerCase(), low, q, p);
 	}
 
 }
