@@ -40,7 +40,6 @@ public class UserInterface extends Application {
 	
 	protected static Validation rules;
 
-	private Scene scene;
 	private ScrollPane stuff;
 	private BorderPane root;
 	private VBox viewItemPage;
@@ -80,7 +79,7 @@ public class UserInterface extends Application {
 			stuff.setHbarPolicy(ScrollBarPolicy.NEVER);
 			root = new BorderPane();
 			stuff.setContent(root);
-			scene = new Scene(stuff,600,500);
+			Scene scene = new Scene(stuff,600,500);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());			
 			primaryStage.setScene(scene);
 

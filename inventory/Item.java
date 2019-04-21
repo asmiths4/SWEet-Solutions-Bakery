@@ -5,7 +5,7 @@ public class Item{
 	protected final String NAME;
 	protected final String UNITS;
 	protected final Integer LOW_LVL;
-	protected int quantity;
+	private int quantity;
 	private double price;
 
 	protected Item(boolean isIngredient, String name, String unit, int low, int q, double p){
