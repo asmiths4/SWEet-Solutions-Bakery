@@ -1,6 +1,7 @@
 package application;
 
 import inventory.*;
+import recipeBook.*;
 	
 import java.io.IOException;
 
@@ -26,6 +27,7 @@ public class Main extends Application {
 	private Button Istart;
 	
 	public static Inventory inventory;
+	public static RecipeBook r;
 	
 	@FXML //opens the pos system
 	private void handleButtonActionT(ActionEvent event) {	
@@ -44,7 +46,7 @@ public class Main extends Application {
 	@FXML //opens the recepie system
 	private void handleButtonActionR(ActionEvent event) {	
 		//CHANGE ("/pos/HomeView.fxml") TO YOUR MAIN PAGE TO LOAD
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/pos/HomeView.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/recipeBook/Ui.fxml"));
 		try {
 			loader.load();
 		} catch (IOException ex) {
@@ -58,7 +60,6 @@ public class Main extends Application {
 	
 	@FXML //opens the customOrder system
 	private void handleButtonActionO(ActionEvent event) {
-		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/customOrders/sweetSolutionsCustomOrders.fxml"));
 		try {
 			loader.load();
@@ -80,6 +81,7 @@ public class Main extends Application {
 	@Override //starts the application
 	public void start(Stage primaryStage) {
 		inventory = new Inventory();
+		r = new RecipeBook();
 		try {
 			AnchorPane root = (AnchorPane) FXMLLoader.load(Main.class.getResource("/application/MainView.fxml"));
 			Scene scene = new Scene(root,400,400);

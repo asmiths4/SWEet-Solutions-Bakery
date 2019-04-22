@@ -1,5 +1,7 @@
 package customOrders;
 
+import application.*;
+
 public class customOrdersModel {
     //This Class is intended to be the model part of the MVC. This class talks to the recipe book to find out the availability of the ingredients used in the custom order.
 	public static String[] checkAvailability(boolean chocolate,boolean vanilla,boolean carrot,boolean redVelvet,boolean small,boolean medium,boolean large,boolean creamCheese,boolean ganache,boolean butterCream,boolean grahamCrackers,boolean cocoa,boolean whippedCream,boolean strawberries,String specialInstructions) {
@@ -80,22 +82,23 @@ public class customOrdersModel {
     	if(grahamCrackers) {
     		toppings = "grahamcracker";
     		information[4] = information[4]+" Graham Crackers";
-          //availableGrahamCrackers = checkRecipeBook(toppings);
+    		//availableGrahamCrackers = checkRecipe(toppings);
+    		// should be able to do application.Main.r.(recepie method here)
     	}
         if(strawberries) {
     		toppings = "strawberries";
     		information[4] = information[4]+" Strawberries";
-    	  //availableStrawberries = checkRecipeBook(toppings);
+    	  //availableStrawberries = checkRecipe(toppings);
     	}
     	if(whippedCream) {
     		toppings = "whippedcream";
     		information[4] = information[4]+" Whipped Cream";
-          //availableWhippedCream = checkRecipeBook(toppings);
+          //availableWhippedCream = checkRecipe(toppings);
     	}
     	if(cocoa) {
     	  toppings = "cocoa";
     	  information[4] = information[4]+" Cocoa";
-    	//availableCocoa = checkRecipeBook(toppings);
+    	//availableCocoa = checkRecipe(toppings);
     	}
 
     	
