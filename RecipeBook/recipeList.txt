@@ -1,0 +1,11 @@
+creamcheese: <cream, 2> 
+buttercream: <cream, 1> <butter, 1> 
+ganache: <chocolate, 2> <butter, 1> 
+chocolate: <flour, 3> <chocolate, 2> <sugar, 1> 
+vanilla: <flour, 3> <sugar, 2> <egg, 1> 
+carrot: <flour, 3> <sugar, 2> <carrot, 3> 
+redvelvet: <flour, 3> <sugar, 2> <egg, 1> 
+strawberries: <strawberry, 5> 
+grahamcracker: <cookie, 2> 
+whippedcream: <cream, 2> 
+cocoa: <chocolate, 1> 
