@@ -38,7 +38,7 @@ import javafx.collections.ObservableList;
 
 public class UserInterface extends Application {
 	
-	protected static Validation rules;
+	public static Validation rules;
 
 	private ScrollPane stuff;
 	private BorderPane root;

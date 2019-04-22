@@ -74,8 +74,9 @@ public class Main extends Application {
 	
 	@FXML //opens inventory system
 	private void handleButtonActionI(ActionEvent event) {	
-		Inventory inv = new Inventory();
-		inv.startUI();
+		UserInterface ui = new UserInterface();
+		ui.rules = inventory.business;
+		ui.start(new Stage());
 	}
 	
 	@Override //starts the application
