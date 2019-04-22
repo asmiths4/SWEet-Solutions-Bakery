@@ -17,6 +17,11 @@ public class Item{
 		price = p;
 	}
 
+	//generates a copy of provided item
+	protected static Item copy(Item i){
+		return new Item(i.INGREDIENT, i.NAME, i.UNITS, i.LOW_LVL, i.quantity, i.price);
+	}
+	
 	protected boolean isLow(){
 		if(LOW_LVL != null){
 			if(quantity <= LOW_LVL){

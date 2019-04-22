@@ -72,6 +72,16 @@ public final class Validation{
 		}
 	}
 
+	//returns a copy of all items instead of the originals
+	public ArrayList<Item> getAllBaked(){
+		ArrayList<Item> original = db.getAllBaked();
+		ArrayList<Item> copy = new ArrayList<Item>();
+		for(int i = 0; i < original.size(); i++){
+			copy.add(Item.copy(original.get(i)));
+		}
+		return copy;
+	}
+	
 	public int getAmountIngredient(String name){
 		return getA(name, true);
 	}
