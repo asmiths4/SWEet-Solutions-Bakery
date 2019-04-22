@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customOrders.myController">
+   <children>
+      <Button fx:id="submitButton" layoutX="480.0" layoutY="329.0" mnemonicParsing="false" onAction="#sendInformation" prefHeight="45.0" prefWidth="82.0" text="Submit" />
+      <Label fx:id="sweetSolutionsLabel" layoutX="164.0" layoutY="25.0" prefHeight="71.0" prefWidth="291.0" text="SWEet Solutions" textAlignment="RIGHT">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="83.0" text="Create your custom solution">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="baseItemLabel" layoutX="77.0" layoutY="142.0" text="Cake Type:" />
+      <Label fx:id="sizeLabel" layoutX="190.0" layoutY="142.0" text="Size:" />
+      <Label fx:id="icingLabel" layoutX="272.0" layoutY="142.0" text="Icing:" />
+      <Label fx:id="extrasLabel" layoutX="403.0" layoutY="142.0" text="Toppings:" />
+      <Label fx:id="specialInstructionsLabel" layoutX="25.0" layoutY="294.0" text="Special Instructions:" />
+      <RadioButton fx:id="chocolateRadioButton" layoutX="77.0" layoutY="166.0" mnemonicParsing="false" onAction="#chocolateFunction" text="Chocolate" />
+      <RadioButton fx:id="vanillaRadioButton" layoutX="77.0" layoutY="192.0" mnemonicParsing="false" onAction="#vanillaFunction" text="Vanilla" />
+      <RadioButton fx:id="carrotRadioButton" layoutX="77.0" layoutY="216.0" mnemonicParsing="false" onAction="#carrotFunction" text="Carrot" />
+      <RadioButton fx:id="redVelvetRadioButton" layoutX="77.0" layoutY="242.0" mnemonicParsing="false" onAction="#redVelvetFunction" text="Red Velvet" />
+      <RadioButton fx:id="smallRadioButton" layoutX="176.0" layoutY="166.0" mnemonicParsing="false" onAction="#smallFunction" text="Small" />
+      <RadioButton fx:id="mediumRadioButton" layoutX="176.0" layoutY="192.0" mnemonicParsing="false" onAction="#mediumFunction" text="Medium" />
+      <RadioButton fx:id="largeRadioButton" layoutX="176.0" layoutY="216.0" mnemonicParsing="false" onAction="#largeFunction" text="Large" />
+      <RadioButton fx:id="buttercreamRadioButton" layoutX="272.0" layoutY="166.0" mnemonicParsing="false" onAction="#buttercreamFunction" text="Buttercream" />
+      <RadioButton fx:id="creamCheeseRadioButton" layoutX="272.0" layoutY="192.0" mnemonicParsing="false" onAction="#creamCheeseFunction" text="Cream Cheese" />
+      <RadioButton fx:id="ganacheRadioButton" layoutX="272.0" layoutY="216.0" mnemonicParsing="false" onAction="#ganacheFunction" text="Ganache" />
+      <CheckBox fx:id="strawberriesCheckBox" layoutX="401.0" layoutY="166.0" mnemonicParsing="false" text="Strawberries" />
+      <CheckBox fx:id="grahamCrackersCheckBox" layoutX="400.0" layoutY="192.0" mnemonicParsing="false" text="Graham Crackers" />
+      <CheckBox fx:id="whippedCreamCheckBox" layoutX="402.0" layoutY="216.0" mnemonicParsing="false" text="Whipped Cream" />
+      <CheckBox fx:id="cocoaCheckBox" layoutX="402.0" layoutY="242.0" mnemonicParsing="false" text="Cocoa" />
+      <TextArea fx:id="specialInstructionsTextArea" layoutX="139.0" layoutY="294.0" prefHeight="93.0" prefWidth="305.0" promptText="Enter special instructions for the baker." />
+      <Button fx:id="backBtn" layoutX="25.0" layoutY="329.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="82.0" text="Back" />
+   </children>
+</AnchorPane>

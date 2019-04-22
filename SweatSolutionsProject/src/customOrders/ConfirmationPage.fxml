@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="418.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customOrders.myController">
+   <children>
+      <AnchorPane layoutX="-478.0" layoutY="-470.0" prefHeight="450.0" prefWidth="460.0" />
+      <Label layoutX="26.0" layoutY="22.0" prefHeight="45.0" prefWidth="409.0" text="Thank you for ordering with SWEet Solutions">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="308.0" text="Your order should be ready in:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="270.0" layoutY="308.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="reasonLabel" layoutX="99.0" layoutY="136.0" prefHeight="27.0" prefWidth="344.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="changeButton" layoutX="128.0" layoutY="354.0" mnemonicParsing="false" onAction="#changeInformation" text="Change My Order">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="printResultsButton" layoutX="99.0" layoutY="67.0" mnemonicParsing="false" onAction="#printResults" prefHeight="56.0" prefWidth="224.0" text="Click to confirm your order">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="48.0" layoutY="139.0" text="Cake:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="169.0" text="Size:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="201.0" text="Icing:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="235.0" text="Topping:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="269.0" text="Instructions:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmSizeLabel" layoutX="99.0" layoutY="171.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmIcingLabel" layoutX="99.0" layoutY="203.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmToppingLabel" layoutX="110.0" layoutY="237.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmInstructionsLabel" layoutX="133.0" layoutY="269.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

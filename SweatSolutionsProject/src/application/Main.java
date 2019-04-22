@@ -58,8 +58,8 @@ public class Main extends Application {
 	
 	@FXML //opens the customOrder system
 	private void handleButtonActionO(ActionEvent event) {
-		//CHANGE ("/pos/HomeView.fxml") TO YOUR MAIN PAGE TO LOAD
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/pos/HomeView.fxml"));
+		
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/customOrders/sweetSolutionsCustomOrders.fxml"));
 		try {
 			loader.load();
 		} catch (IOException ex) {
