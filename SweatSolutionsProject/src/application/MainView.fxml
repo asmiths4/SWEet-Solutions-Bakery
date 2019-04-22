@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Text layoutX="162.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SWEat System" />
+      <Button fx:id="Tstart" layoutX="128.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleButtonActionT" prefHeight="60.0" prefWidth="144.0" text="POS System" />
+      <Button fx:id="Rstart" layoutX="128.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleButtonActionR" prefHeight="60.0" prefWidth="144.0" text="Recepie System" />
+      <Button fx:id="Ostart" layoutX="128.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleButtonActionO" prefHeight="60.0" prefWidth="144.0" text="Online Order System" />
+      <Button fx:id="Istart" layoutX="128.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleButtonActionI" prefHeight="60.0" prefWidth="144.0" text="Inventory System" />
+   </children>
+</AnchorPane>

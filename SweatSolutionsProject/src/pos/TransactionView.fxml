@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.TransactionController">
+   <children>
+      <Text layoutX="168.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POS System" />
+      <TextArea fx:id="inv" editable="false" layoutX="16.0" layoutY="50.0" prefHeight="221.0" prefWidth="180.0" />
+      <Text layoutX="81.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" />
+      <Text layoutX="281.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciet" />
+      <Button fx:id="add" layoutX="49.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonActionAdd" text="Add" />
+      <TextField fx:id="id" layoutX="97.0" layoutY="302.0" prefHeight="25.0" prefWidth="67.0" />
+      <Text layoutX="57.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/Remove Item" />
+      <Text layoutX="51.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+      <Text layoutX="38.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" />
+      <TextField fx:id="amount" layoutX="97.0" layoutY="335.0" prefHeight="25.0" prefWidth="67.0" />
+      <Button fx:id="remove" layoutX="106.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonActionRemove" text="Remove" />
+      <Button fx:id="done" layoutX="275.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonActionDone" text="Done" />
+      <Text layoutX="256.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Info" />
+      <TextField fx:id="total" layoutX="287.0" layoutY="335.0" prefHeight="25.0" prefWidth="67.0" text="0.0" />
+      <Text layoutX="252.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+      <Text layoutX="254.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax" />
+      <TextField fx:id="tax" layoutX="287.0" layoutY="302.0" prefHeight="25.0" prefWidth="67.0" text="0.0" />
+      <TextArea fx:id="reciet" editable="false" layoutX="208.0" layoutY="50.0" prefHeight="221.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>
