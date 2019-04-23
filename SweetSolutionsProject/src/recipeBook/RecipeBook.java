@@ -1,6 +1,7 @@
 package recipeBook;
 
 import application.*;
+import inventory.Inventory;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -156,14 +157,14 @@ public class RecipeBook {
 		
 		//Inventory inv = new Inventory();
 		// should be able to use application.Main.inventory.business.(method name here)
-		/*for(int i = 0; i < ingredients.size(); i++) {
-			if(Integer.parseInt(amounts.get(i)) >= inv.business.getAmountIngredient(ingredients.get(i))) {
+		for(int i = 0; i < ingredients.size(); i++) {
+			if(Integer.parseInt(amounts.get(i)) <= application.Main.inventory.business.getAmountIngredient(ingredients.get(i))) {
 				status = true;
 			}
 			else {
 				status = false;
 			}
-		}*/
+		}
 		
 		reader.close();
 		return status;

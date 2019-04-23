@@ -1,10 +1,12 @@
 package customOrders;
 
+import java.io.IOException;
+
 import application.*;
 
 public class customOrdersModel {
     //This Class is intended to be the model part of the MVC. This class talks to the recipe book to find out the availability of the ingredients used in the custom order.
-	public static String[] checkAvailability(boolean chocolate,boolean vanilla,boolean carrot,boolean redVelvet,boolean small,boolean medium,boolean large,boolean creamCheese,boolean ganache,boolean butterCream,boolean grahamCrackers,boolean cocoa,boolean whippedCream,boolean strawberries,String specialInstructions) {
+	public static String[] checkAvailability(boolean chocolate,boolean vanilla,boolean carrot,boolean redVelvet,boolean small,boolean medium,boolean large,boolean creamCheese,boolean ganache,boolean butterCream,boolean grahamCrackers,boolean cocoa,boolean whippedCream,boolean strawberries,String specialInstructions) throws IOException {
     	String cake;
     	String size;
     	String icing;
@@ -17,6 +19,7 @@ public class customOrdersModel {
     	boolean availableWhippedCream = true;
     	boolean availableCocoa = true;
     	boolean available;
+    	recipeBook.RecipeBook r = new recipeBook.RecipeBook();
     	
     	//Find out which type of cake they want
     	if(chocolate) {
@@ -82,29 +85,28 @@ public class customOrdersModel {
     	if(grahamCrackers) {
     		toppings = "grahamcracker";
     		information[4] = information[4]+" Graham Crackers";
-    		//availableGrahamCrackers = checkRecipe(toppings);
-    		// should be able to do application.Main.r.(recepie method here)
+    		availableGrahamCrackers = r.checkRecipe(toppings);
     	}
         if(strawberries) {
     		toppings = "strawberries";
     		information[4] = information[4]+" Strawberries";
-    	  //availableStrawberries = checkRecipe(toppings);
+    	    availableStrawberries = r.checkRecipe(toppings);
     	}
     	if(whippedCream) {
     		toppings = "whippedcream";
     		information[4] = information[4]+" Whipped Cream";
-          //availableWhippedCream = checkRecipe(toppings);
+            availableWhippedCream = r.checkRecipe(toppings);
     	}
     	if(cocoa) {
     	  toppings = "cocoa";
     	  information[4] = information[4]+" Cocoa";
-    	//availableCocoa = checkRecipe(toppings);
+    	  availableCocoa = r.checkRecipe(toppings);
     	}
 
     	
 		//Send information to the recipe system
-    	//availableCake = checkRecipeBook(cake);
-    	//availableIcing = checkRecipeBook(icing);
+    	availableCake = r.checkRecipe(cake);
+    	availableIcing = r.checkRecipe(icing);
     	
     	available = availableCake&&availableIcing&&availableGrahamCrackers&&availableCocoa&&availableWhippedCream&&availableStrawberries;
     	

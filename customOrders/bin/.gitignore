@@ -1,10 +1,10 @@
 /.classpath
+/ConfirmationPage.fxml
+/application/
+/sweetSolutionsCustomOrders.fxml
 /.metadata/
 /.project
 /.settings/
-/ConfirmationPage.fxml
-/application/
 /build.fxbuild
 /customOrdersModel.class
 /myController.class
-/sweetSolutionsCustomOrders.fxml
